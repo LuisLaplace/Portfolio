@@ -167,6 +167,10 @@ a:hover {
     padding: 75px;
 }
 
+.boxes:hover {
+    transform: skew(15deg);
+}
+
 .resume p {
     display: flex;
     justify-content: center;
