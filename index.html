@@ -24,41 +24,52 @@
    </section>
    <section class="adjust">
       <div class="card">
-         <header class="top-av">About Me</header>
+         <header id="about-me" class="top-header">About Me</header>
          <img src="./assets/images/sample-avatar.jpg" id="avatar" alt="Avatar">
          <div class="container">
-           <h4><b>Luis Palacio</b></h4>
-           <p>Lorem ipsum dolor sit..</p>
+            <h4><b>Luis Palacio</b></h4>
+            <p>Lorem ipsum dolor sit..</p>
          </div>
-       </div>
+      </div>
    </section>
 
-   <section class="work">
+   <section id="work" class="work">
       <article>
          <h2>Work</h2>
-         <img src="https://via.placeholder.com/200" id="tilt" alt="placeholder">
+         <a href="https://luislaplace.github.io/week-1-refactor-challenege/" id="link">
+            <img src="./assets/images/digital-marketing-meeting.jpg"
+               alt="digital-marketing-meeting"></a>
       </article>
    </section>
 
    <section>
-      <h2 class="adjust">Resume</h2>
+      <ul class="boxes">
+         <li><p>Sample Work</p></li>
+         <li><p>Sample Work</p></li>
+         <li><p>Sample Work</p></li>
+         <li><p>Sample Work</p></li>
+         <li><p>Sample Work</p></li>
+         <li><p>Sample Work</p></li>
+      </ul>
+   </section>
+
+   <section class="resume">
+      <h2 id="resume" class="top-header">Resume</h2>
       <p>Nam vulputate diam nec tempor bibendum. Donec luctus augue eget malesuada
          ultrices. </p>
    </section>
 
-   <section>
-      <h2 class="contact-me">Contact Me</h2>
-      <form>
-         <label for="username">Name:</label>
-         <input id="username" type="text" placeholder="Full Name" />
-       </p>
-       <p>
-         <label  for="email">E-mail:</label>
-         <input id="email" type="text" placeholder="E-mail" />
-       </p>
-       <button>Submit</button>
-      </form>
+   <section class="contact-me">
+      <h2 id="contact-me" class="top-header">Contact Me</h2>
+      <form method="POST">
+         <input type="text" name="name" placeholder="Full Name">
+         <input type="email" name="email" placeholder="E-mail">
+         <a href="mailto:lap2837@gmail.com" class="submit">Submit</a>
+    </form>
    </section>
+   <footer>
+      <h2>Made with ❤️ by luislaplace</h2>
+   </footer>
 </body>
 
 </html>

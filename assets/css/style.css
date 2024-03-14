@@ -9,7 +9,9 @@ body {
     display: flex;
     flex-direction: column;
     line-height: 1.3;
-    
+    background-image: url(../images/background1.jpg);
+    background-size: cover;
+    color: #e9e9e9;
 }
 
 .intro {
@@ -26,6 +28,8 @@ body {
     border: 1px solid black;
     width: 25%;
     background-color: rgb(110, 194, 223);
+    color: black;
+    display: flex;
 }
 
 .nav-link {
@@ -41,7 +45,7 @@ a:link {
 }
 
 a:focus {
-    color:purple
+    color: purple
 }
 
 a:hover {
@@ -49,8 +53,11 @@ a:hover {
     background-color: dimgrey;
 
 }
+
 #nav-bar {
     position: absolute;
+    display: inline-flex;
+    flex-wrap: wrap;
     top: 0;
     right: 0;
 }
@@ -64,44 +71,102 @@ a:hover {
 
 .card {
     width: 200px;
-    box-shadow: 0 0 4px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     margin: auto;
-  }
-  
-  .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
+}
 
-  .top-av {
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.top-header {
     text-align: center;
     font-weight: bolder;
     border: 1px solid rgb(110, 194, 223);
-    background-color: rgb(110, 194, 223);
-  }
-
-  #avatar {
-    height: 200px;
-    width: 200px;
-    border-bottom: 10px;    
-  }
-  .container {
-    padding: 2px 16px;
-    margin-bottom: 20px;
-  }
-
-  .work {
-    width: 200px;
-    margin: auto;
-  }
-
-#tilt {
-    opacity: 0.5;
+    background-color: black;
 }
 
-#tilt:hover {
-    opacity: 1.0;
-    height: 250px;
-    width: 250px;
+#avatar {
+    height: 200px;
+    width: 200px;
+    border-bottom: 10px;
+}
+
+.container {
+    padding: 2px 16px;
+    margin-bottom: 20px;
+}
+
+.work {
+    width: 300px;
+    margin: auto;
+}
+
+.work h2 {
+    background-color: black;
+    text-align: center;
+    border: 1px solid rgb(110, 194, 223);
+}
+
+#link {
+    height: 300px;
+    width: 300px;
+}
+
+#link img {
+    height: 300px;
+    width: 300px;
+}
+
+#link img:hover {
     transform: skew(15deg);
+}
+
+.boxes {
+    display: inline-flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 42px;
+    gap: 40px;
+}
+
+.boxes li {
+    display: flex;
+    background-color: black;
+    border: 2px solid rgb(110, 194, 223);
+    height: 200px;
+    width: 200px;
+}
+
+.boxes li p {
+    padding: 75px;
+}
+
+.resume p {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-me form {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    gap: 10px;
+}
+
+.submit {
+    background-color: black;
+    height: 30px;
+    width: 70px;
+    border: 1px solid rgb(110, 194, 223);
+    border-radius: 2px;
+    text-decoration: none;
+    text-align: center;
+}
+
+footer h2 {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
 }
